@@ -86,30 +86,46 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  margin: 20px;
+}
 
+/* Position needs to be absolute for our square to move freely */
 #super-square {
     width: 50px;
     height: 50px;
     background-color: red;
     margin: 20px;
+    position: absolute;
+    padding: 30px;
 }
 
 /* Our classes which will be added/removed in the main.js file*/
 .box-spin {
     background-color: blue;
-  -webkit-transform: rotate(70.5deg);  /* Chrome, Safari 3.1+ */
-    -moz-transform: rotate(70.5deg);  /* Firefox 3.5-15 */
-      -ms-transform: rotate(70.5deg);  /* IE 9 */
-        -o-transform: rotate(70.5deg);  /* Opera 10.50-12.00 */
-         transform: rotate(70.5deg);  /* Firefox 16+, IE 10+, Opera 12.50+ */
+  -webkit-transform: rotate(360deg);  /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(360deg);  /* Firefox 3.5-15 */
+      -ms-transform: rotate(360deg);  /* IE 9 */
+        -o-transform: rotate(360deg);  /* Opera 10.50-12.00 */
+         transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera 12.50+ */
 }
 .box-animate {
-  -webkit-transition: all 2.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
-     -moz-transition: all 2.3s ease-out;  /* Firefox 4-15 */
-       -o-transition: all 2.3s ease-out;  /* Opera 10.50–12.00 */
-          transition: all 2.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+  -webkit-transition: all 0.8s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.8s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.8s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.8s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 }
 
+/* Start by keeping the reset button hidden*/
+#reset-square {
+  display: none;
+}
+
+button {
+  margin-top: 180px;
+  width: 150px;
+  height: 50px;
+}
 
 
 
